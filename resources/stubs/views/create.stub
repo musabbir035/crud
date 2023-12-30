@@ -1,0 +1,24 @@
+@extends('layouts.main')
+@section('title', 'Add with_space')
+@section('content')
+  <div class="card">
+    <div class="card-header">
+      <div class="row">
+        <div class="col-6">
+          <h1 class="h3 m-0">Add New with_space</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-body">
+      <form action="{{ route('kebab_cases.store') }}" class="row gy-3" method="POST">
+        @csrf
+        page_contents
+
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+@endsection

@@ -1,0 +1,25 @@
+@extends('layouts.main')
+@section('title', 'Edit with_space')
+@section('content')
+  <div class="card">
+    <div class="card-header">
+      <div class="row">
+        <div class="col-6">
+          <h1 class="h3 m-0">Edit with_space</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-body">
+      <form action="{{ route('kebab_cases.update', $snake_case) }}" class="row gy-3" method="POST">
+        @csrf
+        @method('PUT')
+        page_contents
+
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+@endsection

@@ -1,0 +1,29 @@
+{
+    "name": "musabbir035/crud",
+    "description": "Generates code for simple CRUD operation.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Musabbir035\\Crud\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Musabbir Islam",
+            "email": "musabbir035@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.4|^8.1",
+        "illuminate/support": "^8|^9|^10"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Musabbir035\\Crud\\CrudServiceProvider"
+            ]
+        }
+    }
+}
